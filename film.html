@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//FR">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Ciney</title>
+</head>
+
+<body onload="getFilmParameters()">
+    <ul class="en-tete">
+        <li>
+            <a href="index.html">
+                <img style="height: 60px;" src="images/logo.png" onclick="window.location.href='index.html'"></img>
+            </a>
+        </li>
+    </ul>
+<div class="wrapper">
+    <div class="one">
+        <h1 id="film-title"></h1>
+        <table id="list-genres" class="line">
+        </table>
+        <a class="red">Description :</a>
+        <p id="film-description" class="description"></p>
+        <table class="table">
+            <tr>
+                <td class="cell" ><a class="red">Directed by :</a><a id="film-director" style="padding-left: 20;"></a></td>
+                <td class="cell"><a class="red">Written by :</a><a id="film-writer" style="padding-left: 20;"></a></td>
+            </tr>
+            <tr>
+                <td class="cell"><a class="red">Released date :</a><a id="film-date-de-sortie" style="padding-left: 20;">ff</a></td>
+                <td class="cell"><a class="red">Running time :</a><a id="film-duration" style="padding-left: 20;"></a></td>
+            </tr>
+            <tr>
+                <td class="cell"><a class="red">Budget :</a><a id="film-budget" style="padding-left: 20;"></a></td>
+                <td class="cell"><a class="red">Box Office :</a><a id="film-recette" style="padding-left: 20;"></a></td>
+            </tr>
+            <tr>
+                <td class="cell"><a class="red">Music by :</a><a id="film-music" style="padding-left: 20;"></a></td>
+                <td class="cell" style="overflow:hidden;">
+                    <a class="red" style="float:left; display:inline">Country :</a>
+                    <a style="padding-left: 20;float:left; display:inline">
+                        <p id="film-country"></p>
+                    </a>
+            </tr>
+            <tr>
+                <td class="cell" style="overflow:hidden;">
+                    <a class="red" style="float:left; display:inline">Cast :</a>
+                    <a style="padding-left: 20;float:left; display:inline">
+                        <p id="film-actors"></p>
+                    </a>
+                </td>
+                <td class="cell" style="overflow:hidden;">
+                    <a class="red" style="float:left; display:inline">Production :</a>
+                    <a style="padding-left: 20;float:left; display:inline">
+                        <p id="film-producer"></p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="two">
+        <img id="poster">
+    </div>
+    <div class="three">
+        <h2>From same director :</h2>
+        <div class="list-films">
+            <div class="film"><img class="film-list" id="img-0"><p class="titre"><a id="titre-img-0"></a></p></div>
+            <div class="film"><img class="film-list" id="img-1"><p class="titre"><a id="titre-img-1"></a></p></div>
+            <div class="film"><img class="film-list" id="img-2"><p class="titre"><a id="titre-img-2"></a></p></div>
+            <div class="film"><img class="film-list" id="img-3"><p class="titre"><a id="titre-img-3"></a></p></div>
+            <div class="film"><img class="film-list" id="img-4"><p class="titre"><a id="titre-img-4"></a></p></div>
+            <div class="film"><img class="film-list" id="img-5"><p class="titre"><a id="titre-img-5"></a></p></div>
+            <div class="film"><img class="film-list" id="img-6"><p class="titre"><a id="titre-img-6"></a></p></div>
+            <div class="film"><img class="film-list" id="img-7"><p class="titre"><a id="titre-img-7"></a></p></div>
+        </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

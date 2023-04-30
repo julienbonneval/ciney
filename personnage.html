@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//FR">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Ciney</title>
+</head>
+
+<body onload="getPersoParameters()">
+    <ul class="en-tete">
+        <li>
+            <a href="index.html">
+                <img style="height: 60px;" src="images/logo.png" onclick="window.location.href='index.html'"></img>
+            </a>
+        </li>
+    </ul>
+<div class="wrapper">
+    <div class="one">
+        <h1 id="personnage-name"></h1>
+        <a class="red">Description</a>
+        <p id="perso-abstract" class="description"></p>
+        <table class="table">
+            <tr>
+                <td class="cell"><a class="red">Birth Place</a><a id="perso-nationalite" style="padding-left: 20;"></a></td>
+                <td class="cell"><a class="red">Birth Date</a><a id="perso-naissance" style="padding-left: 20;"></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="two">
+        <img id="image-perso">
+    </div>
+    <div class="three">
+        <h2>Filmography</h2>
+        <div class="list-films">
+            <div class="film"><img class="film-list" id="img-0"><p class="titre"><a id="titre-img-0"></a></p></div>
+            <div class="film"><img class="film-list" id="img-1"><p class="titre"><a id="titre-img-1"></a></p></div>
+            <div class="film"><img class="film-list" id="img-2"><p class="titre"><a id="titre-img-2"></a></p></div>
+            <div class="film"><img class="film-list" id="img-3"><p class="titre"><a id="titre-img-3"></a></p></div>
+            <div class="film"><img class="film-list" id="img-4"><p class="titre"><a id="titre-img-4"></a></p></div>
+            <div class="film"><img class="film-list" id="img-5"><p class="titre"><a id="titre-img-5"></a></p></div>
+            <div class="film"><img class="film-list" id="img-6"><p class="titre"><a id="titre-img-6"></a></p></div>
+            <div class="film"><img class="film-list" id="img-7"><p class="titre"><a id="titre-img-7"></a></p></div>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

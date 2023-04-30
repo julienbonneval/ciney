@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="style.css">
+  <title>Ciney</title>
+</head>
+
+<body class="index" onload="autocomplete_recherche()">
+  <ul class="en-tete">
+    <li>
+        <a href="index.html">
+            <img style="height: 60px;" src="images/logo.png" onclick="window.location.href='index.html'"></img>
+        </a>
+    </li>
+</ul>
+
+<div style="display: flex;margin-left: auto;margin-right:auto;width:33%;padding: 14px 16px">
+  <div class="autocomplete;">
+    <input id="searchbar" style="height: 60px;width:400px;"  type="text" name="search" placeholder="Search a movie ...">
+  </div>
+  <button style="background-color: #A52422;border:2px;height: 65px;" onclick="rechercherFilm();rechercherActeur()"><img style="height: 50px;width:40px" src="images/search.png" ></img></button>
+</div>
+<div style="display: flex;margin-left: auto;margin-right:auto;width:50%;padding: 14px 16px">
+<table class="styled-table" id="resultatsFilms"></table>
+<table class="styled-table" id="resultatsActeurs"></table>
+<div>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
